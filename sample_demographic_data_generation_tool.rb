@@ -257,7 +257,7 @@ time = Time.now.strftime "%Y-%m-%d %H:%M:%S"
 
 ["id, group_id, group_id2, date_created, title, document"]
 
-File.open("/var/www/PD/test_sql/db/seeds.csv", 'w') do |file|
+File.open("test_data.csv", 'w') do |file|
 	data.each_with_index do |d, i|
 		tmp = d.split(",")
 		tmp_s = i.to_s + "," + tmp[12].to_s + ",0,"+ Time.now.to_date.to_s + "," + tmp[0] + " " + tmp[1] + "," + tmp[2..11].join(" ")  
