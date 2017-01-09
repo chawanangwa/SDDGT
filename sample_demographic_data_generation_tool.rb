@@ -277,7 +277,3 @@ end
 #puts "mother: #{dup_mother_swap}"
 #puts "father: #{dup_father_swap}"
 
-
-def generate_duplicate(record)
-
-end
